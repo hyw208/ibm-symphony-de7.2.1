@@ -1,11 +1,11 @@
 # Create & use docker image for ibm symphony developer edition 7.2.1 
 
 # Goal: create symphony vm with docker-machine
-assume ibm symphony bin & dat are downloaded and Dockerfile & start.sh are here too
-create a vm called symphony and assign 4G memory: docker-machine create --virtualbox-memory "4096" symphony
-create /home/docker/ibm onto vm so we can push files later used to build docker image: docker-machine ssh symphony mkdir -p /home/docker/ibm 
-ssh Dockerfile to vm, used to build the ibm symphony image: docker-machine scp Dockerfile symphony:/home/docker/ibm 
-ssh start.sh to vm, used to start the ibm symphony cluster: docker-machine scp start.sh symphony:/home/docker/ibm 
+1. assume ibm symphony bin (binary) & dat (entitlement) are downloaded and Dockerfile & start.sh are here too
+2. create a vm called symphony and assign 4G memory: docker-machine create --virtualbox-memory "4096" symphony
+3. create /home/docker/ibm on vm so we can push files later used to build docker image: docker-machine ssh symphony mkdir -p /home/docker/ibm 
+4. ssh Dockerfile to vm, used to build the ibm symphony image: docker-machine scp Dockerfile symphony:/home/docker/ibm 
+5. ssh start.sh to vm, used to start the ibm symphony cluster: docker-machine scp start.sh symphony:/home/docker/ibm 
 
 # Goal: bring up python http server for bin & dat to be downloaded with wget in image building
 cd to directory containing ibm symphony bin & dat
