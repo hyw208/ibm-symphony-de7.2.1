@@ -1,18 +1,18 @@
-# symphony
-create docker image for ibm symphony developer edition 7.2.1 
+# ibm symphony 
+# Create & use docker image for ibm symphony developer edition 7.2.1 
 
 ####################################################################################
-# goal: create symphony vm with docker-machine
-# assume ibm symphony bin & dat are downloaded and Dockerfile & start.sh are here too
-# create a vm called symphony and assign 4G memory: docker-machine create --virtualbox-memory "4096" symphony
-# create /home/docker/ibm onto vm so we can push files later used to build docker image: docker-machine ssh symphony mkdir -p /home/docker/ibm 
-# ssh Dockerfile to vm, used to build the ibm symphony image: docker-machine scp Dockerfile symphony:/home/docker/ibm 
-# ssh start.sh to vm, used to start the ibm symphony cluster: docker-machine scp start.sh symphony:/home/docker/ibm 
+goal: create symphony vm with docker-machine
+assume ibm symphony bin & dat are downloaded and Dockerfile & start.sh are here too
+create a vm called symphony and assign 4G memory: docker-machine create --virtualbox-memory "4096" symphony
+create /home/docker/ibm onto vm so we can push files later used to build docker image: docker-machine ssh symphony mkdir -p /home/docker/ibm 
+ssh Dockerfile to vm, used to build the ibm symphony image: docker-machine scp Dockerfile symphony:/home/docker/ibm 
+ssh start.sh to vm, used to start the ibm symphony cluster: docker-machine scp start.sh symphony:/home/docker/ibm 
 
 ####################################################################################
 # goal: bring up python http server for bin & dat to be downloaded with wget in image building
-# cd to directory containing ibm symphony bin & dat
-# assuming you have python installed, run cmd: python -m SimpleHTTPServer 8000
+cd to directory containing ibm symphony bin & dat
+assuming you have python installed, run cmd: python -m SimpleHTTPServer 8000
 
 ####################################################################################
 # goal: build docker image called "cbb"
