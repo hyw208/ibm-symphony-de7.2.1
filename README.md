@@ -1,4 +1,5 @@
 # Create & use docker image for ibm symphony developer edition 7.2.1 
+I use docker-machine and plan to write compute intensive apps using python and ibm symphony grid is a good platform for this use case. 
 
 # Goal: create symphony vm with docker-machine:
 1. assume ibm symphony bin (binary) & dat (entitlement), Dockerfile and start.sh are downloaded in one directory
