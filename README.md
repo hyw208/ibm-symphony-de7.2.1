@@ -36,7 +36,8 @@
 1. ibm symphony knowledge center: https://www.ibm.com/support/knowledgecenter/en/SSZUMP_7.2.0/sym_kc_welcome.html
 2. ibm symphony binary (bin) & entitlement (dat) download: https://www.ibm.com/us-en/marketplace/analytics-workload-management (click on start free trial)
 3. ibm symphony installation guide: https://www.ibm.com/support/knowledgecenter/en/SSZUMP_7.2.0/install/install_linux_management.html
-4. docker machine reference: https://docs.docker.com/machine/get-started/#run-containers-and-experiment-with-machine-commands
+4. ibm symphony cluster docker image: https://hub.docker.com/r/ibmcom/spectrum-symphony/
+5. docker machine reference: https://docs.docker.com/machine/get-started/#run-containers-and-experiment-with-machine-commands
 
 # Next:
 1. deploy sample projects & code under /opt/ibm/spectrumcomputing/symphonyde/de721/7.2.1/samples/Python
