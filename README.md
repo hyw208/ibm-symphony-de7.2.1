@@ -39,5 +39,5 @@
 4. docker machine reference: https://docs.docker.com/machine/get-started/#run-containers-and-experiment-with-machine-commands
 
 # Next:
-1. deploy sample code
+1. deploy sample projects & code under /opt/ibm/spectrumcomputing/symphonyde/de721/7.2.1/samples/Python
 2. create & deploy dummy service, app and client
