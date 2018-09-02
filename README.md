@@ -30,6 +30,7 @@
 # Goal: to access ibm symphony dashboard in browser
 1. find out symphony vm ip, eg. tcp://192.168.99.99:2345: docker-machine ls 
 2. combine ip with mapped port 80, you get symphony dashboard url: http://192.168.99.99:80/platform or just http://192.168.99.99/platform
+3. **if it doesn't work, need to port forwarding for docker-machine
 
 # References: 
 1. ibm symphony knowledge center: https://www.ibm.com/support/knowledgecenter/en/SSZUMP_7.2.0/sym_kc_welcome.html
