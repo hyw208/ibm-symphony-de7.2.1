@@ -25,7 +25,7 @@
 2. source env so as to execute the cmd below: . /opt/ibm/spectrumcomputing/symphonyde/de721/conf/profile.soam
 3. ensure de721 has started: soamview app
 4. ensure cluster is working: symping
-5. check gui http url: start_agent -u
+5. check gui http url: start_agent -u (** this url is not correct, see below "to access ibm symphony dashboard in browser" to get the right url)
 6. now it's ready for you to use 
 
 # Goal: to access ibm symphony dashboard in browser
