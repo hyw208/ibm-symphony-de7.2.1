@@ -38,4 +38,6 @@
 3. ibm symphony installation guide: https://www.ibm.com/support/knowledgecenter/en/SSZUMP_7.2.0/install/install_linux_management.html
 4. docker machine reference: https://docs.docker.com/machine/get-started/#run-containers-and-experiment-with-machine-commands
 
-
+# Next:
+1. deploy sample code
+2. create & deploy dummy service, app and client
