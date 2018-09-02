@@ -20,12 +20,13 @@
 # Goal: run ibm symphony cluster, version de721
 1. run docker image cbb, 18080 is the port in container where 80 is the port on host, symphony vm in this case: docker run -d -p 80:18080 cbb
 
-# Goal: to exec into the running container, use docker ps to find continer eg 123...: docker exec -it 123 /bin/bash
-1. source env so as to execute the cmd below: . /opt/ibm/spectrumcomputing/symphonyde/de721/conf/profile.soam
-2. ensure de721 has started: soamview app
-3. ensure cluster is working: symping
-4. check gui http url: start_agent -u
-5. now it's ready for you to use 
+# Goal: to exec into the running container, 
+1. use docker ps to find continer eg 123...: docker exec -it 123 /bin/bash
+2. source env so as to execute the cmd below: . /opt/ibm/spectrumcomputing/symphonyde/de721/conf/profile.soam
+3. ensure de721 has started: soamview app
+4. ensure cluster is working: symping
+5. check gui http url: start_agent -u
+6. now it's ready for you to use 
 
 # Goal: to access ibm symphony dashboard in browser
 1. find out symphony vm ip, eg. tcp://192.168.99.99:2345: docker-machine ls 
